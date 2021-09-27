@@ -25,8 +25,8 @@ import Foundation
 //  Green cards should have a roll value of 4, 5 or 6
 
 struct Card {
- let color : String 
- let roll : Int    
+    let color : String 
+    let roll : Int    
 }
 
 
@@ -34,6 +34,10 @@ struct Card {
 // Next, create a class called "Deck":
 
 // (1) Give the Deck class a property called "cards" of type [Card]
+
+class Deck {
+    var cards: [Card]
+}
 
 // (2) When initializing the deck make sure that it has 10 cards of each color for a total of 30
 
