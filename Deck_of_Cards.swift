@@ -24,7 +24,10 @@ import Foundation
 //  Red cards should have a roll value of either 3 or 4
 //  Green cards should have a roll value of 4, 5 or 6
 
-
+struct Card {
+ let color : String 
+ let roll : Int    
+}
 
 
 
