@@ -36,7 +36,17 @@ struct Card {
 // (1) Give the Deck class a property called "cards" of type [Card]
 
 class Deck {
-    var cards: [Card]
+    var Color = ["Blue" , "Green" , "Red" ]
+	 let roll = [ Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6),Int.random(in: 1...6)]
+	 var Card =  [String: [Int]]()
+	 
+	 for i in 0...2
+	 {
+	Card[Color[i]] = roll
+	 
+	 
+	 }
+	 
 }
 
 // (2) When initializing the deck make sure that it has 10 cards of each color for a total of 30
